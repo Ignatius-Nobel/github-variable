@@ -1,0 +1,13 @@
+name: Github Variables
+
+on:
+  push:
+
+jobs:
+  github-variables:
+    name: Github Variables
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: Print Github Variable
+        run: echo "The ACCESS_ID is ${{ vars.ACCESS_ID }}"
